@@ -1,12 +1,11 @@
 import express from 'express'; //It has to be installed as @types/express
+import routes from './routes';
 
 const app = express();
 
 app.use(express.json());
 
-app.get('/', (req,res) =>{
-
-});
+app.use(routes);
 
 
 app.listen(3333);
